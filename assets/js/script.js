@@ -44,7 +44,7 @@ function initilize(){
                                         <p class="card-text">
                                             Rating : ${resEle[i].rating["$numberDecimal"]}
                                             <button type="button" class="btn btn-light deletebtn" data-click="delete" data-id=${resEle[i].prod_id}>
-                                                <i class="fa-regular fa-trash" data-click="delete" data-id=${resEle[i].prod_id}></i>
+                                                <i class="fa-sharp fa-solid fa-trash" data-click="delete" data-id=${resEle[i].prod_id}></i>
                                             </button>
                                         </p>
                                     </div>
