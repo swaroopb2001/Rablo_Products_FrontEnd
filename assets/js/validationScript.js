@@ -37,7 +37,7 @@ function ValidationForm(){
 }
 
 function addProduct(res){
-    fetch("https://rabloproductsapiserver.up.railway.app/products/create-product",{method:"POST",headers: {'Content-Type': 'application/json'},body: JSON.stringify(res)})
+    fetch("https://rablo.unistart.online/products/create-product",{method:"POST",headers: {'Content-Type': 'application/json'},body: JSON.stringify(res)})
     .then(result=>result.json())
     .then((data)=>{
         displayToast("Successfully Inserted go back to products page");
