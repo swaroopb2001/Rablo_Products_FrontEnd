@@ -11,7 +11,7 @@ function deleteProduct(id){
     var res = {
         prod_id:id
     }
-    fetch("https://rablo.unistart.online/products",{method:"DELETE",headers: {'Content-Type': 'application/json'},body: JSON.stringify(res)})
+    fetch("http://127.0.0.1:64135/products",{method:"DELETE",headers: {'Content-Type': 'application/json'},body: JSON.stringify(res)})
     .then(result=>result.json())
     .then((data)=>{
         displayToast("Product Deleted Successfully");
@@ -29,7 +29,7 @@ function displayToast(message){
 
 function initilize(){
     productElement.innerHTML='';
-    fetch("https://rablo.unistart.online/products",{method:'GET'})
+    fetch("http://127.0.0.1:64135/products",{method:'GET'})
     .then(result=>result.json())
     .then((data)=>{
         var resEle = data.data;
