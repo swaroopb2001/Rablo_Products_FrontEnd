@@ -37,7 +37,7 @@ function ValidationForm(){
 }
 
 function addProduct(res){
-    fetch("http://127.0.0.1:64135/products/create-product",{method:"POST",headers: {'Content-Type': 'application/json'},body: JSON.stringify(res)})
+    fetch("http://ec2-13-201-58-195.ap-south-1.compute.amazonaws.com:8000/products/create-product",{method:"POST",headers: {'Content-Type': 'application/json'},body: JSON.stringify(res)})
     .then(result=>result.json())
     .then((data)=>{
         displayToast("Successfully Inserted go back to products page");
